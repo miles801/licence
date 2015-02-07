@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<licence>
+    <description>
+        <![CDATA[
+            该Licence由开发商提供，不得更改任何信息，否则可能导致Licence验证失败!
+        ]]>
+    </description>
+    <name>万达集团（生产服务器）</name>
+
+    <!-- 服务器的MAC地址-->
+    <macAddress>
+        <!-- 74 -->
+        <ip>A0-D3-C1-F8-D4-E4</ip>
+        <ip>A0-D3-C1-F8-D4-E7</ip>
+        <ip>A0-D3-C1-F8-D4-E6</ip>
+        <!-- 75 -->
+        <ip>A0-D3-C1-F8-DB-0C</ip>
+        <ip>A0-D3-C1-F8-DB-0F</ip>
+        <ip>A0-D3-C1-F8-DB-0E</ip>
+
+        <!-- 117 -->
+        <ip>40-A8-F0-28-53-FC</ip>
+        <ip>40-A8-F0-28-53-FF</ip>
+        <ip>40-A8-F0-28-53-FE</ip>
+
+        <!-- 118 -->
+        <ip>40-A8-F0-27-9C-0C</ip>
+        <ip>40-A8-F0-27-9C-0F</ip>
+    </macAddress>
+
+    <!-- 允许登录的最大用户数 -->
+    <maxUser>200</maxUser>
+
+    <!-- 开始使用时间-->
+    <startDate>20150115</startDate>
+
+    <!-- 截止使用时间-->
+    <endDate>20150315</endDate>
+
+    <!-- 密钥 -->
+    <key>
+        <![CDATA[
+            D299C-C94F0-1521F-42951-E691F-2308D
+        ]]>
+    </key>
+</licence>
