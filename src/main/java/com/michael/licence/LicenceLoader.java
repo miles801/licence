@@ -16,7 +16,6 @@ import java.util.Set;
 
 /**
  * Licence加载器，默认加载classpath下的lic.xml
- *
  * @author Michael
  */
 final class LicenceLoader {
@@ -116,6 +115,18 @@ final class LicenceLoader {
         // 获取key
         String key = getKey();
         licence.setKey(key);
+
+        // 获得版本
+        String version = getVersion();
+        licence.setVersion(version);
+    }
+
+    private String getVersion() {
+        String version = root.elementTextTrim("version");
+        if (isBlank(version)) {
+            throw new SecurityException("不合法的Licence文件，缺少<version>标签!");
+        }
+        return version;
     }
 
     private String getName() {

@@ -12,7 +12,6 @@ import java.util.Set;
  * 主机MAC地址：
  * 开始时间
  * 结束时间
- *
  * @author Michael
  */
 public interface Licence {
@@ -41,5 +40,10 @@ public interface Licence {
      * licence有效期的截止时间
      */
     Date getEndDate();
+
+    /**
+     * 获得验证器使用的版本号
+     */
+    String getVersion();
 
 }

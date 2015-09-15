@@ -7,11 +7,16 @@ import java.util.Set;
  * @author Michael
  */
 final class LicenceImpl implements Licence {
+    /**
+     * 版本
+     */
+    public static final String VERSION = "1.1";
     private String username;
     private Integer maxUser;
     private String key;
     private Date startDate;
     private Date endDate;
+    private String version;
     private Set<String> macAddress;
 
     @Override
@@ -67,5 +72,14 @@ final class LicenceImpl implements Licence {
 
     public void setMacAddress(Set<String> macAddress) {
         this.macAddress = macAddress;
+    }
+
+    @Override
+    public String getVersion() {
+        return version;
+    }
+
+    public void setVersion(String version) {
+        this.version = version;
     }
 }

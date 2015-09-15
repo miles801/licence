@@ -36,6 +36,14 @@ class LicenceParser {
 
         // 获取截止时间
         builder.append(format.format(licence.getEndDate()));
+
+        // 添加版本号
+        String version = licence.getVersion();
+        if (!LicenceImpl.VERSION.equals(version)) {
+            throw new SecurityException("不合法的Licence文件，版本号不匹配!");
+        }
+        builder.append(version);
+
         return builder.toString();
     }
 }

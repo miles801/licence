@@ -5,9 +5,10 @@
             该Licence由开发商提供，不得更改任何信息，否则可能导致Licence验证失败!
         ]]>
     </description>
-    <name>万达集团（生产服务器）</name>
+    <name>上海优创融联计算机科技有限公司</name>
 
-    <!-- 服务器的MAC地址-->
+    <version>1.1</version>
+
     <macAddress>
         <!-- 74 -->
         <ip>A0-D3-C1-F8-D4-E4</ip>
@@ -37,10 +38,9 @@
     <!-- 截止使用时间-->
     <endDate>20150315</endDate>
 
-    <!-- 密钥 -->
     <key>
         <![CDATA[
-            D299C-C94F0-1521F-42951-E691F-2308D
+            DD071-4487B-AD4E0-65511-18489-C9CE9
         ]]>
     </key>
 </licence>
