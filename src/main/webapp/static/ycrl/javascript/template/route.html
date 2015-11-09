@@ -1,0 +1,9 @@
+<div class="panel panel-tab" style="height: 100%;margin: 0;" >
+    <ul class="nav nav-tabs" >
+        <li ng-class="{active:$parent.$parent.active===$index}" ng-repeat="foo in routes">
+            <a  ng-click="$parent.$parent.active=$index;" ng-href="{{foo.url}}" style="outline: none;">{{ foo.name }}</a ></li >
+    </ul >
+    <div class="tab-content" style="height: 100%;margin-top: -35px; padding-top: 35px" >
+        <div ng-view class=" 'am-fade' " style="height: 100%;" ></div >
+    </div >
+</div >

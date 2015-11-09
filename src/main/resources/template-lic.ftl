@@ -5,28 +5,28 @@
             该Licence由开发商提供，不得更改任何信息，否则可能导致Licence验证失败!
         ]]>
     </description>
-    <name>上海优创融联计算机科技有限公司</name>
+    <name>${username}</name>
 
     <version>1.1.1</version>
 
     <macAddress>
-        <ip>84-A6-C8-19-7F-21</ip>
-        <ip>84-A6-C8-19-7F-31</ip>
-        <ip>84-A6-C8-19-7F-30</ip>
+        <#list macAddress as mac>
+        <ip>${mac}</ip>
+        </#list>
     </macAddress>
 
     <!-- 允许登录的最大用户数 -->
-    <maxUser>50</maxUser>
+    <maxUser>${maxUser}</maxUser>
 
     <!-- 开始使用时间-->
-    <startDate>20151108</startDate>
+    <startDate>${startDate?string('yyyyMMdd')}</startDate>
 
     <!-- 截止使用时间-->
-    <endDate>20160109</endDate>
+    <endDate>${endDate?string('yyyyMMdd')}</endDate>
 
     <key>
         <![CDATA[
-            3713B-0F87B-DCA0A-E41E2-D447B-764A0
+            ${key}
         ]]>
     </key>
 </licence>

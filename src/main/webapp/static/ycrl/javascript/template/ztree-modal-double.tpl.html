@@ -1,0 +1,49 @@
+<div class="modal" tabindex="-1" role="dialog" >
+    <div class="modal-dialog" ng-style="{width: options.modalWidth||'800px',height:options.modalHeight}" >
+        <div class="modal-content" >
+            <div class="modal-header" >
+                <button type="button" class="close" ng-click="$hide()" >&times;</button >
+                <h4 class="modal-title" >
+                    <span ng-cloak >{{options.title || '多选树'}}</span >
+                </h4 >
+            </div >
+            <div class="modal-body" ng-style="{height: options.bodyHeight||'400px'}" >
+                <div class="col-5" style="height: 100%;overflow: auto;padding: 5px;border: 1px solid #DDDDDD;" >
+                    <div class="tree" >
+                        <div class="tree-content" >
+                            <ul id="tree_left" class="ztree" ></ul >
+                        </div >
+                    </div >
+                </div >
+                <div class="col-2" style="height: 100%;overflow: hidden;text-align: center;padding: 10px;" >
+                    <div style="height: 160px;margin-top:50%;" >
+                        <div style="text-align: center;margin-top:15px;" ng-cloak ng-if="showSelectAllButton" >
+                            <i class="icons right2" ng-click="addAllToRight();" title="全部添加" style="cursor: pointer;" ></i >
+                        </div >
+                        <div style="text-align: center;margin-top:15px;" >
+                            <i class="icons right" ng-click="addToRight();" title="添加" style="cursor: pointer;" ></i >
+                        </div >
+                        <div style="text-align: center;margin-top:15px;" >
+                            <i class="icons left" ng-click="removeFromRight();" title="取消" style="cursor: pointer;" ></i >
+                        </div >
+                        <div style="text-align: center;margin-top:15px;" ng-cloak ng-if="showSelectAllButton" >
+                            <i class="icons left2" ng-click="removeAllRight();" title="全部取消" style="cursor: pointer;" ></i >
+                        </div >
+                    </div >
+                </div >
+                <div class="col-5" style="height: 100%;overflow: auto;padding: 5px;border: 1px solid #DDDDDD;" >
+                    <div class="tree" >
+                        <div class="tree-content" >
+                            <ul id="tree_right" class="ztree" ></ul >
+                        </div >
+                    </div >
+                </div >
+            </div >
+            <div class="modal-footer" >
+                <button type="button" class="btn btn-primary" ng-click="confirm()" >确认</button >
+                <button type="button" class="btn btn-default" ng-click="$hide()" >关闭</button >
+            </div >
+        </div >
+    </div >
+</div >
+

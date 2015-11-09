@@ -1,0 +1,19 @@
+<style>
+    .aside-backdrop.am-fade {
+        background: none;
+    }
+</style>
+<div class="aside" tabindex="-1" role="dialog" style="top:auto;bottom:24px;border:1px solid #e5e5e5;">
+    <div class="aside-dialog">
+        <div class="aside-content">
+            <div class="aside-header" style="padding: 1px 15px;">
+                <button type="button" class="close" ng-click="$hide()">&times;</button>
+                <h4 class="aside-title" ng-bind-template="{{title}}"></h4></div>
+            <div class="aside-body" ng-bind-template="{{content}}"
+                 style="min-height: 80px;padding: 10px 15px;max-width: 400px;"></div>
+            <div class="aside-footer" ng-if="close">
+                <button type="button" class="btn btn-default" ng-click="$hide()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

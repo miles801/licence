@@ -16,6 +16,7 @@ import java.util.Set;
 
 /**
  * Licence加载器，默认加载classpath下的lic.xml
+ *
  * @author Michael
  */
 final class LicenceLoader {
