@@ -4,8 +4,8 @@
 
     <groupId>com.michael</groupId>
     <artifactId>licence</artifactId>
-    <version>1.1-media</version>
-    <packaging>jar</packaging>
+    <version>1.1.1</version>
+    <packaging>war</packaging>
 
     <name>licence</name>
     <url>http://maven.apache.org</url>
